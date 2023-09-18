@@ -18,7 +18,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Potato-1
+            Potato-K8s!!!
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
