@@ -18,7 +18,7 @@ before_install:
   - docker build -t rynpowers/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker CI=true run rynpowers/react-test npm run test
+  - docker run -e CI=true rynpowers/react-test npm run test
 
 deploy:
   provider: script
