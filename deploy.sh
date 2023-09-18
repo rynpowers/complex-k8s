@@ -1,6 +1,6 @@
-docker build -t rynpowers/complex-client:latest -t rynpowers/complex-client:$SHA  -f ./client/Dockerfile
-docker build -t rynpowers/complex-server:latest -t rynpowers/complex-server:$SHA  -f ./server/Dockerfile
-docker build -t rynpowers/complex-worker:latest -t rynpowers/complex-worker:$SHA  -f ./worker/Dockerfile
+docker build -t rynpowers/complex-client:latest -t rynpowers/complex-client:$SHA  -f ./client/Dockerfile ./client
+docker build -t rynpowers/complex-server:latest -t rynpowers/complex-server:$SHA  -f ./server/Dockerfile ./server
+docker build -t rynpowers/complex-worker:latest -t rynpowers/complex-worker:$SHA  -f ./worker/Dockerfile ./worker
 docker push rynpowers/complex-client:latest
 docker push rynpowers/complex-client:$SHA
 docker push rynpowers/complex-server:latest
